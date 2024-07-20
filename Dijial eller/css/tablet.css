@@ -1,0 +1,15 @@
+#Home-G{
+    height: 22%;
+    display: block;
+    margin-top: 70px;
+}
+
+.homeTXT, .homePNG{
+    position: static;
+    top: 250px;
+}
+
+.homePNG{
+    padding-left: 400px;
+}
+
