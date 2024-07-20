@@ -201,21 +201,21 @@ body {
 
 
 /* içerik ve resim düzenlemesi */
-.i1{
+.i1 img{
 
 }
-.i2{
+.i2 img{
     
 }
-.i3 img {
+.i3 img{
     object-fit: cover;
 }
 .i4 img{
     width: 80%;
 }
-.i5{
+.i5 img{
     
 }
-.i6{
+.i6 img{
     
 }
