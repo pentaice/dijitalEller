@@ -2,6 +2,10 @@
     max-width: 517;   
 }
 
+.container{
+    font-size: small;
+}
+
 #Home-G{
     height: 18%;
     display: block;
@@ -14,11 +18,22 @@
 }
 
 .homePNG{
-    padding-left: 80px;
+    padding-left: 0px;
+}
+.homePNG img{
+    padding-left: 0px;
+    width: 220px;
+}
+
+.one{
+    max-width: 15rem;
 }
 
 .homeTXT{
     margin: 10px;
+}
+.homePNG h1,h3,p{
+    font-size: small;
 }
 
 .item {

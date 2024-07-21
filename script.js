@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
 document.querySelector('#Ab').addEventListener('click', function(event) {
     //event.preventDefault(); // Linkin varsayılan tıklama işlevini iptal et
 
-    const element = document.getElementById('About'); // Aşağı kaydırılacak hedef element
+    const element = document.getElementById('icerik'); // Aşağı kaydırılacak hedef element
     element.scrollIntoView({ behavior: 'smooth' }); // Yumuşak kaydırma efekti ile sayfayı aşağı kaydır
 });
 
