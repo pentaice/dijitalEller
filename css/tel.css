@@ -1,5 +1,5 @@
 .item {
-    max-width: 300px;   
+    max-width: 517;   
 }
 
 #Home-G{
@@ -19,4 +19,15 @@
 
 .homeTXT{
     margin: 10px;
+}
+
+.item {
+    flex: 1 1 100%; /* Tek sütunlu yapı */
+    max-width: 100%; /* Kutuların genişliğini ekrana göre ayarla */
+    text-align: center; /* Metni ortala */
+}
+
+.item img {
+    display: block; /* Resmi blok olarak ayarla */
+    margin: 0 auto; /* Resmi yatayda ortala */
 }

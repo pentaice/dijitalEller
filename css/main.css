@@ -1,31 +1,35 @@
-*{
+* {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; /* Arka plan rengi, isteğinize göre ayarlayabilirsiniz */
     display: flex;
     justify-content: center;
-
 }
 
 .navbar {
-    background-color: transparent;
-    padding: 15px 0;
+    background-color: #d8097e; /* Değiştirildi: Arka plan rengi pembe */
+    padding: 15px 15px;
     position: fixed;
-    width: 100%;
+    width: 90%;
     top: 0;
     z-index: 1000; /* Diğer içeriklerin üzerine çıkmasını sağlar */
     transition: background-color 0.5s ease; /* Geçiş efekti */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+   
+   
+
 }
 
 .navbar.scrolled {
-    background-color: #ffffff; /* Navbar scroll edildiğinde arka plan rengi */
+    background-color: #d8097e; /* Navbar scroll edildiğinde arka plan rengi */
     box-shadow: 0 2px 6px rgba(0,0,0,0.4); /* Gölgelendirme efekti */
 }
 
@@ -40,7 +44,7 @@ body {
 
 .navbar .logo {
     font-size: 1.5em;
-    color: #d8097e;
+    color: white; /* Değiştirildi: Yazı rengi beyaz */
     text-decoration: none;
 }
 
@@ -57,23 +61,21 @@ body {
 
 .navbar .nav-links li a {
     text-decoration: none;
-    color: #d8097e;
+    color: white; /* Değiştirildi: Yazı rengi beyaz */
     transition: color 0.3s ease;
 }
 
 .navbar .nav-links li a:hover {
-    color: #e66cb1;
+    color: white; /* Değiştirildi: Yazı rengi beyaz */
 }
 
-
-#Home-G{
+#Home-G {
     width: 100%;
     height: 45%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 70px;
-
     overflow: hidden;
     position: relative;
 }
@@ -81,24 +83,26 @@ body {
 .homeTXT {
     position: absolute;
     left: -100%;
-    animation: slideInFromLeft 1.2s forwards ;
+    animation: slideInFromLeft 1.2s forwards;
 }
+
 .homePNG {
     position: absolute;
     right: -100%;
-    animation: slideInFromRight 1.2s forwards ;
+    animation: slideInFromRight 1.2s forwards;
 }
+
 @keyframes slideInFromLeft {
     to {
         left: 0;
     }
 }
+
 @keyframes slideInFromRight {
     to {
         right: 0;
     }
 }
-
 
 .one {
     max-width: 80rem;
@@ -113,12 +117,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-
 
 .item {
     flex: 1 1 calc(50% - 20px); /* İki sütunlu yapı */
@@ -127,17 +126,16 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
-    
 }
 
-.item:hover{
+.item:hover {
     margin: 10px;
     padding: 24px;
     transition-duration: 0.2s;
     box-shadow: 0 0 30px rgba(216,9,126, 0.5);
 }
 
-.item:not(:hover){
+.item:not(:hover) {
     transition-duration: 0.2s;
 }
 
@@ -160,62 +158,91 @@ body {
     }
 }
 
-
-#About{
+#About {
     margin-top: 40px;
     padding: 40px;
-    height: 60px;
+    height: auto; /* Yüksekliği içeriğe göre otomatik ayarla */
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* İçeriği dikey olarak yerleştirir */
     align-items: center;
-    background-color:rgb(35, 35, 35);
+    background-color: rgb(35, 35, 35);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-
     color: white;
 }
 
-#About p{
+.social-links {
+    display: flex;
+    gap: 20px; /* İkonlar arasındaki boşluğu ayarlar */
+    margin-bottom: 20px; /* İkonların altına boşluk bırakır */
+}
+
+.social-links a {
+    color: rgb(126, 126, 126);
+    font-size: 24px; /* İkon boyutunu ayarlar */
+    transition: color 0.4s; /* Renk değişim animasyonu */
+}
+
+.social-links a:hover {
+    color: rgb(255, 255, 255); /* Üzerine gelindiğinde renk değişimi */
+}
+
+.contact-info {
+    text-align: center; /* E-posta bilgisini ortalar */
+}
+
+.contact-info p {
+    margin: 0; /* Paragrafın kenar boşluklarını kaldırır */
+}
+
+.contact-info a {
+    color: rgb(126, 126, 126);
+    text-decoration: none; /* Alt çizgi kaldırır */
+}
+
+.contact-info a:hover {
+    color: rgb(255, 255, 255); /* Üzerine gelindiğinde renk değişimi */
+}
+
+#About p {
     margin: 0px;
 }
 
-#About a{
+#About a {
     color: rgb(126, 126, 126);
     margin: 0px 10px;
 }
 
-#About a:hover{
+#About a:hover {
     color: rgb(255, 255, 255);
     transition-duration: 0.4s;
 }
 
-#About a :not(:hover){
+#About a:not(:hover) {
     transition-duration: 0.4s;
 }
 
-.navbarlogo{
+.navbarlogo {
     width: 35px;
     margin-right: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
-
 
 /* içerik ve resim düzenlemesi */
-.i1 img{
+.i1 img {
+}
 
+.i2 img {
 }
-.i2 img{
-    
+
+.i3 img {
 }
-.i3 img{
-    object-fit: cover;
+
+.i4 img {
 }
-.i4 img{
-    width: 80%;
+
+.i5 img {
 }
-.i5 img{
-    
-}
-.i6 img{
-    
+
+.i6 img {
 }
